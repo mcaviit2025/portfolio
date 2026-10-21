@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sumit Thakare | Java & Spring Boot Developer</title>
+  <meta name="description" content="Portfolio of Sumit Thakare, MCA student and Java / Spring Boot developer building REST APIs, full-stack web apps and tools for students.">
+  <meta property="og:title" content="Sumit Thakare | Java & Spring Boot Developer">
+  <meta property="og:description" content="MCA student building REST APIs and full-stack applications with Java, Spring Boot and MySQL.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Apply saved theme before paint to avoid a flash */
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+
+  <div class="progress" id="progress" aria-hidden="true"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Sumit<span>.</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark / light mode" title="Toggle theme">
+          <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO / ABOUT -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Sumit Thakare</h1>
+          <p class="role">MCA Student &middot; <span class="typed" id="typed">Java &amp; Spring Boot Developer</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="summary">
+            I'm an MCA student at VIIT Baramati (SPPU) who enjoys turning real problems into
+            working software. I build REST APIs and full-stack applications with Java, Spring
+            Boot and MySQL, from database design and role-based access to email and certificate
+            workflows. Beyond coursework, I create free study resources for fellow MCA/MBA
+            students and lead technical activities as Secretary of the Denis Ritchie IT Club.
+            I'm looking for opportunities as a Java / backend developer where I can keep learning
+            and ship useful products.
+          </p>
+          <div class="hero-buttons">
+            <a href="resume.pdf" class="btn btn-primary" download>Download Resume</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+          <div class="social">
+            <a href="https://github.com/mcaviit2025" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.linkedin.com/in/sumit-thakare-a03a352a8/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+          <ul class="stats">
+            <li><strong data-count="4">4</strong><span>Featured Projects</span></li>
+            <li><strong data-count="2">2</strong><span>Awards &amp; Recognitions</span></li>
+            <li><strong data-count="1">1</strong><span>Club Leadership Role</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-photo reveal">
+          <div class="photo-frame">
+            <img src="profile.jpg" alt="Sumit Thakare, professional portrait"
+                 onerror="this.style.display='none'; this.parentNode.classList.add('no-photo');">
+            <span class="photo-fallback">ST</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I work with</p>
+          <h2>Technical Toolkit</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="card skill-card reveal">
+            <h3>Programming Languages</h3>
+            <div class="chips"><span>Java</span><span>Python</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Backend Technologies</h3>
+            <div class="chips"><span>Spring Boot</span><span>Hibernate / JPA</span><span>REST APIs</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Databases</h3>
+            <div class="chips"><span>SQL</span><span>MySQL</span><span>MongoDB</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Core Concepts</h3>
+            <div class="chips">
+              <span>OOP</span><span>Data Structures &amp; Algorithms</span><span>Programming Fundamentals</span>
+              <span>REST API Design</span><span>Relational Database Design</span><span>SDLC</span>
+            </div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Version Control</h3>
+            <div class="chips"><span>Git</span><span>GitHub</span></div>
+          </article>
+          <article class="card skill-card reveal">
+            <h3>Tools</h3>
+            <div class="chips"><span>Docker</span><span>Postman</span><span>IntelliJ IDEA</span><span>VS Code</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="card project reveal">
+            <div class="project-top">
+              <h3>Competition Management System</h3>
+              <span class="tag">Backend</span>
+            </div>
+            <div class="chips small">
+              <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JPA / Hibernate</span>
+            </div>
+            <p class="desc">
+              A complete platform for running a college-level competition end to end. Students
+              register online, organisers verify payments, judges record evaluations, and
+              participants receive certificates and email notifications automatically, replacing
+              manual spreadsheets and follow-ups.
+            </p>
+            <h4>Achievements</h4>
+            <ul class="achievements">
+              <li>Built REST APIs for student registration, payment verification and evaluation workflows</li>
+              <li>Designed the MySQL schema with JPA/Hibernate and role-based access control</li>
+              <li>Added certificate generation and email notifications, tested end to end</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/mcaviit2025/event_mgm" target="_blank" rel="noopener">Source Code</a>
+              <!-- LIVE PROJECT LINK: uncomment and add your URL
+              <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="live">Live Demo</a>
+              -->
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project reveal">
+            <div class="project-top">
+              <h3>E-Commerce Web Application</h3>
+              <span class="tag">Full Stack</span>
+            </div>
+            <div class="chips small">
+              <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>JPA / Hibernate</span>
+            </div>
+            <p class="desc">
+              An online shopping application covering the full buyer journey: browse products,
+              manage a cart and place orders, backed by secure user authentication and a
+              normalised relational database.
+            </p>
+            <h4>Achievements</h4>
+            <ul class="achievements">
+              <li>Built REST APIs for product browsing, shopping cart and order management</li>
+              <li>Modelled database entities and relationships with JPA/Hibernate and implemented authentication</li>
+              <li>Tested every API with Postman and fixed application issues found along the way</li>
+            </ul>
+            <div class="links">
+              <a href="https://github.com/mcaviit2025/ecom_email" target="_blank" rel="noopener">Source Code</a>
+              <!-- LIVE PROJECT LINK: uncomment and add your URL
+              <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="live">Live Demo</a>
+              -->
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project reveal">
+            <div class="project-top">
+              <h3>StudyHub Baramati</h3>
+              <span class="tag">Frontend</span>
+            </div>
+            <div class="chips small">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <p class="desc">
+              A free study-notes website for MCA and MBA students, with subject-wise notes organised
+              into clean, easy-to-navigate pages. Built as a multi-page site with shared styling so
+              that new subjects and units can be added quickly.
+            </p>
+            <h4>Achievements</h4>
+            <ul class="achievements">
+              <li>Created a free resource hub for the MCA/MBA student community</li>
+              <li>Structured a multi-page site with a shared CSS architecture for easy expansion</li>
+              <li>Designed a responsive, readable layout for studying on phone or laptop</li>
+            </ul>
+            <div class="links">
+              <!-- SOURCE CODE LINK: uncomment and add your URL
+              <a href="YOUR_REPO_URL" target="_blank" rel="noopener">Source Code</a>
+              -->
+              <!-- LIVE PROJECT LINK: uncomment and add your URL
+              <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="live">Live Site</a>
+              -->
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="card project reveal">
+            <div class="project-top">
+              <h3>Certificate Generation System</h3>
+              <span class="tag">Full Stack</span>
+            </div>
+            <div class="chips small">
+              <span>React</span><span>Firebase</span>
+            </div>
+            <p class="desc">
+              A self-service certificate portal for events and workshops. An admin uploads the
+              student list, picks a template and publishes a public link; students open the link,
+              find their name and download their certificate instantly, while the admin monitors
+              usage from one dashboard.
+            </p>
+            <h4>Achievements</h4>
+            <ul class="achievements">
+              <li>Admin can upload a student list and generate a shareable public link</li>
+              <li>Template selection with publish control and activity monitoring</li>
+              <li>Removes manual certificate distribution for event organisers</li>
+            </ul>
+            <div class="links">
+              <!-- SOURCE CODE LINK: uncomment and add your URL
+              <a href="YOUR_REPO_URL" target="_blank" rel="noopener">Source Code</a>
+              -->
+              <!-- LIVE PROJECT LINK: uncomment and add your URL
+              <a href="YOUR_LIVE_URL" target="_blank" rel="noopener" class="live">Live Demo</a>
+              -->
+            </div>
+          </article>
+
+        </div>
+
+        <p class="more reveal">More projects on <a href="https://github.com/mcaviit2025" target="_blank" rel="noopener">GitHub &rarr;</a></p>
+      </div>
+    </section>
+
+    <!-- AWARDS & ACTIVITIES -->
+    <section id="activities" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Beyond the classroom</p>
+          <h2>Awards &amp; Extracurricular Activities</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="year">2025</span>
+            <div class="card">
+              <h3>AAVISHKAR 2025</h3>
+              <p class="sub">Zonal Level Research Competition &middot; Engineering &amp; Technology</p>
+              <p>Presented a project at the zonal round of the AAVISHKAR research competition.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year">2024</span>
+            <div class="card">
+              <h3>Youth Festival 2024</h3>
+              <p class="sub">1st Prize &middot; Student Presentation</p>
+              <p>Won first prize in the student presentation category.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year">Leadership</span>
+            <div class="card">
+              <h3>Secretary, Denis Ritchie IT Club</h3>
+              <p class="sub">Student technical club</p>
+              <p>Coordinated technical activities, student events and club initiatives.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container contact reveal">
+        <p class="eyebrow">Let's connect</p>
+        <h2>Get in Touch</h2>
+        <p class="contact-text">
+          I'm open to Java / backend developer roles and internships. Reach out on LinkedIn or
+          check out my code on GitHub.
+        </p>
+        <div class="hero-buttons center">
+          <a href="https://www.linkedin.com/in/sumit-thakare-a03a352a8/" target="_blank" rel="noopener" class="btn btn-primary">LinkedIn</a>
+          <a href="https://github.com/mcaviit2025" target="_blank" rel="noopener" class="btn btn-outline">GitHub</a>
+          <!-- EMAIL: uncomment and add your address
+          <a href="mailto:YOUR_EMAIL" class="btn btn-outline">Email Me</a>
+          -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sumit Thakare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
